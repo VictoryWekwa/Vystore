@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block page_header %}
+  <div class="jumbotron">
+      <h1 class="display-3">Shop with us.</h1>
+
+      <p class="lead"> Vystore gives you the best products at affordable price.</p>
+      <a class="btn btn-lg btn-primary" href="{% url 'users:register' %}"
+         role="button">Register &raquo;</a>
+  </div>
+
+{% endblock page_header %}

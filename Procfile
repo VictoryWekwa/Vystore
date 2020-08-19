@@ -1,0 +1,1 @@
+web: gunicorn vystore.wsgi --log-file -

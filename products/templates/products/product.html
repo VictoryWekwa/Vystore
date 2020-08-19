@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <p>Product: {{ product }}</p>
+
+   <p>Discounts:{{ description }}</p>
+
+  <ul>
+  {% for discount in discounts %}
+     <li>
+         <p>{{ discount.product_id|linebreaks}}</p>
+         <p>{{ discount.description|linebreaks }}</p>
+     </li>
+  {% empty %}
+      <li>There are no discount for this product yet.</li>
+  {% endfor %}
+  </ul>
+
+{% endblock content %}
+
